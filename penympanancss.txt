@@ -1,0 +1,346 @@
+.header {
+    width: 100%;
+    height: 250px;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./imgs/header.jpeg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+<!-- Di bawah merupakan kode html yang sebelumnya-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous">
+    <title>Asep Aziz Miftahulhuda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="header">
+            <h1 class="headers">Welcome to my Portfolio</h1>
+            <p class="lead">Hi! Perkenalkan nama saya Asep Aziz Miftahulhuda, saya merupakan seorang mahasiswa jurusan
+                Teknik Informatika semester lima. Pada portfolio ini saya akan menunjukkan skill-skill yang saya kuasai
+                sebagai bahan pertimbangan untuk bekerja nanti.</p>
+        </div>
+    </div>
+    <section class="bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">My Work</h2>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <img class="img-fluid" src="./imgs/web1.jpg" alt="">
+                    <h3 class="mb-3">Content Writer</h3>
+                    <p>Saya pernah bekerja sebagai seorang content writer, yang dimana saya kerap mengumpulkan berbagai
+                        macam konten-konten menarik sehingga saya tulis menjadi sebuah content pada website
+                        .</p>
+                    <a class="btn btn-primary" href="#">View Project</a>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <img class="img-fluid" src="imgs/web2.png" alt="">
+                    <h3 class="mb-3">Graphic Designer</h3>
+                    <p>Mengedit sebuah gambar dan mengubahnya menjadi template pada iklan merupakan pekerjaan juga,
+                        disini saya memiliki beberapa jobdesk seperti mengedit gambar, mendesain background dan
+                        menempatkan berbagai macam desain-desain unik sehingga menjadi sebuah keindahan.</p>
+                    <a class="btn btn-primary" href="#">View Project</a>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <img class="img-fluid" src="imgs/web3.jpeg" alt="">
+                    <h3 class="mb-3">Videographer</h3>
+                    <p>Merekam berbagai macam angle dan menyatukannya menjadi sebuah video berdurasi pendek atau panjang
+                        juga merupakan salah satu pekerjaan yang pernah saya tekuni. Saya menggunakan software video
+                        editor dalam menjalankan berbagai macam editing yang ditempatkan di berbagai video sehingga
+                        menjadi satu kesatuan yang enak ketika ditonton.</p>
+                    <a class="btn btn-primary" href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+</body>
+
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous">
+    <title>Asep Aziz Miftahulhuda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        * {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="home">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid" id="about">
+        <div class="context">
+            <h1>Welcome to my Portfolio</h1>
+            <p class="lead">Hi! Perkenalkan nama saya Asep Aziz Miftahulhuda, saya merupakan seorang mahasiswa jurusan
+                Teknik Informatika semester lima. Pada portfolio ini saya akan menunjukkan skill-skill yang saya kuasai
+                sebagai bahan pertimbangan untuk bekerja nanti.</p>
+        </div>
+        <div class="area">
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+    <section class="bg-white" id="portfolio">
+        <div class="container">
+            <h2 class="text-center mb-5">My Work</h2>
+            <div class="row">
+                <div class="col-md-4 mb-5">
+                    <img class="img-fluid" src="./imgs/web1.jpg" alt="">
+                    <h3 class="mb-3">Content Writer</h3>
+                    <p>Saya pernah bekerja sebagai seorang content writer, yang dimana saya kerap mengumpulkan berbagai
+                        macam konten-konten menarik sehingga saya tulis menjadi sebuah content pada website
+                        .</p>
+                    <a class="btn btn-primary" href="#">View Project</a>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <img class="img-fluid" src="imgs/web2.png" alt="">
+                    <h3 class="mb-3">Graphic Designer</h3>
+                    <p>Mengedit sebuah gambar dan mengubahnya menjadi template pada iklan merupakan pekerjaan juga,
+                        disini saya memiliki beberapa jobdesk seperti mengedit gambar, mendesain background dan
+                        menempatkan berbagai macam desain-desain unik sehingga menjadi sebuah keindahan.</p>
+                    <a class="btn btn-primary" href="#">View Project</a>
+                </div>
+                <div class="col-md-4 mb-5">
+                    <img class="img-fluid" src="imgs/web3.jpeg" alt="">
+                    <h3 class="mb-3">Videographer</h3>
+                    <p>Merekam berbagai macam angle dan menyatukannya menjadi sebuah video berdurasi pendek atau panjang
+                        juga merupakan salah satu pekerjaan yang pernah saya tekuni. Saya menggunakan software video
+                        editor dalam menjalankan berbagai macam editing yang ditempatkan di berbagai video sehingga
+                        menjadi satu kesatuan yang enak ketika ditonton.</p>
+                    <a class="btn btn-primary" href="#">View Project</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-light" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">Contact Me</h2>
+            <div class="row">
+                <div class="col-md-8 mx-auto">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center text-white" style="background-color: #f1f1f1;">
+        <!-- Grid container -->
+        <div class="container pt-4">
+            <!-- Section: Social media -->
+            <section class="mb-4">
+                <!-- Facebook -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-facebook-f"></i></a>
+
+                <!-- Twitter -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-twitter"></i></a>
+
+                <!-- Google -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-google"></i></a>
+
+                <!-- Instagram -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-instagram"></i></a>
+
+                <!-- Linkedin -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-linkedin"></i></a>
+                <!-- Github -->
+                <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="#!" role="button"
+                    data-mdb-ripple-color="dark"><i class="fab fa-github"></i></a>
+            </section>
+            <!-- Section: Social media -->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-dark" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+</body>
+
+</html>
